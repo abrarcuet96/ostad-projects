@@ -10,6 +10,8 @@ const LoginComponent = () => {
     const email = formData.get("email");
     const password = formData.get("password");
 
+    console.log(email, password);
+
     let result = await loginUserRequest({
       email,
       password,
